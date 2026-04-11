@@ -17,18 +17,17 @@ export const uspData = [
 ];
 
 export const facilitiesData = [
-  { icon: "fas fa-laptop-code", name: "Smart Classrooms", desc: "Interactive boards & digital learning tools", img: "/latestimage/empty_junior_classroom_modern_global_school_dalmiyanagar.jpeg" },
-  { icon: "fas fa-flask", name: "Science Labs", desc: "Fully equipped Physics, Chemistry & Biology labs", img: "/latestimage/empty_senior_classroom_modern_global_school_dalmiyanagar.jpeg" },
-  { icon: "fas fa-book", name: "Library", desc: "10,000+ books & e-learning digital resources", img: "/latestimage/staff_room_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { icon: "fas fa-futbol", name: "Sports Ground", desc: "Cricket, football, athletics & outdoor sports", img: "/latestimage/kids_playing_in_the_ground_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-laptop-code", name: "Smart Classrooms", desc: "Interactive boards & digital learning tools", img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-seedling", name: "Vibrant Environment", desc: "Beautiful and well-maintained school premises", img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.png" },
+  { icon: "fas fa-users", name: "Staff Room", desc: "Dedicated space for teachers and staff collaboration", img: "/latestimage/staff_room_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-futbol", name: "Sports Ground", desc: "Cricket, football, athletics & outdoor sports", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { icon: "fas fa-bus", name: "Transport", desc: "GPS-tracked, air-conditioned school buses", img: "/latestimage/vehicle_transport_van_image_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { icon: "fas fa-child", name: "Kids Play Area", desc: "Safe and fun dedicated play zone for younger students", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-child", name: "Kids Play Area", desc: "Safe and fun dedicated play zone for younger students", img: "/latestimage/kids_musical_chair_with_teachers_activity_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { icon: "fas fa-walking", name: "Clean Corridors", desc: "Spacious and well-maintained school premises", img: "/latestimage/corridor_premises_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { icon: "fas fa-restroom", name: "Hygienic Washrooms", desc: "Clean and separate washrooms for boys & girls", img: "/latestimage/toilet_modern_global_school_dalmiyanagar.jpeg" },
-  { icon: "fas fa-building", name: "Safe Infrastructure", desc: "Well-maintained building with safe access", img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { icon: "fas fa-music", name: "Music Room", desc: "Vocal & instrumental training facility", img: null },
-  { icon: "fas fa-paint-brush", name: "Art Studio", desc: "Creative arts & craft space for expression", img: null },
-  { icon: "fas fa-heartbeat", name: "Health Centre", desc: "Nurse & first-aid available on campus", img: null }
+  { icon: "fas fa-building", name: "Safe Infrastructure", desc: "Well-maintained building with safe access", img: "/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-car", name: "Parking Area", desc: "Safe and secure parking facility", img: "/latestimage/parking_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-desk", name: "Reception", desc: "Welcoming reception and inquiry counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" }
 ];
 
 export const noticesData = [
@@ -56,30 +55,68 @@ export const timingData = [
   { label: "Sunday", time: "Closed" }
 ];
 
-export const galleryCategories = ["All", "Events", "Sports", "Activities", "Results", "PTM", "Infrastructure"];
+export const galleryCategories = ["All", "Events", "Sports", "Activities", "Results", "PTM", "Teaching", "Infrastructure", "Classrooms"];
 
 export const galleryItems = [
+  // School Life - Featured Images from latestimage
+  { cat: "Infrastructure", label: "Beautiful School Front", img: "/latestimage/school_beautiful_front_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Teacher Teaching Students", img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Kids Play Area", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Results", label: "PTM Prize Distribution", img: "/latestimage/ptm_prize_distribution_to_toppers_modern_gloabal_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Teaching Kids in Classroom", img: "/latestimage/teacher_teaching_in_the_classroom_to_kids_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "School Entrance", img: "/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Senior Students Learning", img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "Reception Counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Student in School Dress", img: "/latestimage/kid_in_dress_modern_gloabal_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Events
   { cat: "Events", label: "Annual Day Function", img: "/landingpageschoolimage/modern global school annual day function best cbse school in dalmiyanagar.jpg" },
   { cat: "Events", label: "Annual Day Celebration", img: "/landingpageschoolimage/modern global school annuals day best cbse school in dalmiyanagar.jpg" },
   { cat: "Events", label: "Morning Prayer Assembly", img: "/landingpageschoolimage/modern global school morning prayer best cbse school in dalmiyanagar.jpg" },
   { cat: "Events", label: "Student Performance", img: "/landingpageschoolimage/modern global school students performance best cbse school in dalmiyanagar.jpg" },
-  { cat: "Sports", label: "Kids Playing in Ground", img: "/latestimage/kids_playing_in_the_ground_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Sports", label: "Playground Activities", img: "/latestimage/kids_playing_in_the_playground_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Activities", label: "Musical Chair with Teachers", img: "/latestimage/kids_musical_chair_with_teachers_activity_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Activities", label: "Yoga Session", img: "/latestimage/cocurricular_activity_yoga_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Activities", label: "Horse Riding Activity", img: "/latestimage/cocurricular_activity_horse_riding_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Results & Prize Distribution
+  { cat: "Results", label: "Prize Distribution with Director & Principal", img: "/latestimage/prize_distribution_with_director_principal_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Results", label: "Topper with Director & Principal", img: "/latestimage/prize_distribution_topper_student_with_director_principal_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Results", label: "Prize Distribution Ceremony", img: "/latestimage/prize_distribution_with_director_principal_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Results", label: "Prize with Chief Guests & Parents", img: "/latestimage/prize_distribution_with_parents_and_chiefguests_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Results", label: "Prize Distribution with Parents", img: "/latestimage/prize_distribution_with_parents_and_chiefguests_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Results", label: "Topper with Parents", img: "/latestimage/topper_kid_with_parents_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Results", label: "Topper with Family", img: "/latestimage/topper_kid_with_parents2_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Results", label: "PTM Prize Distribution", img: "/latestimage/ptm_prize_distribution_to_toppers_modern_gloabal_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Sports & Activities
+  { cat: "Sports", label: "Kids Playing in Ground", img: "/latestimage/kids_playing_in_the_ground_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Sports", label: "Playground Activities", img: "/latestimage/kids_playing_in_the_playground_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Yoga Session", img: "/latestimage/cocurricular_activity_yoga_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Horse Riding Activity", img: "/latestimage/cocurricular_activity_horse_riding_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Musical Chair with Teachers", img: "/latestimage/kids_musical_chair_with_teachers_activity_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Activities", label: "Kids Play Area", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  
+  // PTM & Meetings
   { cat: "PTM", label: "Parent Teacher Meeting", img: "/latestimage/PTM_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "PTM", label: "Individual PTM Session", img: "/latestimage/individual_PTM_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "PTM", label: "Director Addressing PTM Crowd", img: "/latestimage/director_sir_addressing_ptm_crowd_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Teaching & Learning
+  { cat: "Teaching", label: "Teacher Teaching Kids", img: "/latestimage/teacher_teaching_in_the_classroom_to_kids_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Teacher Teaching Students", img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Teacher Teaching Senior Students", img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Teaching", label: "Junior Class Teaching", img: "/latestimage/teacher_teaching_in_the_classroom_to_junior_2_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Infrastructure
   { cat: "Infrastructure", label: "School Beautiful Front", img: "/latestimage/school_beautiful_front_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "School Front View", img: "/latestimage/school_beautiful_front2_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "School Entrance", img: "/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Infrastructure", label: "School Corridor", img: "/latestimage/corridor_premises_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Infrastructure", label: "School Steps & Premises", img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { cat: "Infrastructure", label: "Kids Play Area", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" }
+  { cat: "Infrastructure", label: "Reception Counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "Parking Area", img: "/latestimage/parking_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "Transport Van", img: "/latestimage/vehicle_transport_van_image_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  
+  // Classrooms
+  { cat: "Classrooms", label: "Junior Classroom", img: "/latestimage/empty_junior_classroom_modern_global_school_dalmiyanagar.jpeg" },
+  { cat: "Classrooms", label: "Kids Classroom", img: "/latestimage/empty_kids_classroom_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Classrooms", label: "Activity Room", img: "/latestimage/empty_kids_classroom2_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Classrooms", label: "Senior Classroom", img: "/latestimage/empty_senior_classroom_modern_global_school_dalmiyanagar.jpeg" },
+  { cat: "Infrastructure", label: "Staff Room", img: "/latestimage/staff_room_modern_global_school_dalmiyanagar_dehri.jpeg" }
 ];
 
 export const disclosureData = [
@@ -89,7 +126,7 @@ export const disclosureData = [
   { label: "School Code", value: "XXXXXX" },
   { label: "Address", value: "Dalmiyanagar, Rohtas, Bihar 821305" },
   { label: "Principal Name", value: "Mrs. Kumkum Agarwal" },
-  { label: "Contact Number", value: "+91-XXXXXXXXXX" },
+  { label: "Contact Number", value: "+91-09798560695" },
   { label: "Email", value: "info@modernglobalschool.in" },
   { label: "Classes Offered", value: "Playgroup to Class VIII" },
   { label: "School Type", value: "Co-Educational, English Medium" },
@@ -121,9 +158,9 @@ export const docs = [
 
 export const contactInfo = [
   { icon: "fas fa-map-marker-alt", label: "Address", value: "Modern Global School, Dalmiyanagar, Rohtas, Bihar 821305", color: "#DC2626" },
-  { icon: "fas fa-phone", label: "Phone", value: "+91-XXXXXXXXXX", color: "#2563EB", link: "tel:+91XXXXXXXXXX" },
+  { icon: "fas fa-phone", label: "Phone", value: "+91-09798560695", color: "#2563EB", link: "tel:+919798560695" },
   { icon: "fas fa-envelope", label: "Email", value: "info@modernglobalschool.in", color: "#DC2626", link: "mailto:info@modernglobalschool.in" },
-  { icon: "fab fa-whatsapp", label: "WhatsApp", value: "+91-XXXXXXXXXX", color: "#25D366", link: "https://wa.me/91XXXXXXXXXX" }
+  { icon: "fab fa-whatsapp", label: "WhatsApp", value: "+91-09798560695", color: "#25D366", link: "https://wa.me/919798560695" }
 ];
 
 export const navLinks = [
@@ -151,11 +188,10 @@ export const footerQuickLinks = [
 ];
 
 export const footerAcademics = [
-  { l: "CBSE Curriculum" },
-  { l: "Science Stream" },
-  { l: "Commerce Stream" },
-  { l: "Arts Stream" },
-  { l: "Co-curricular Activities" }
+  { l: "CBSE Curriculum School in Dalmiyanagar" },
+  { l: "Playgroup to Class VIII" },
+  { l: "Best school in dehri dalmiyanagar" },
+  { l: "Best school world calss infrastructure" }
 ];
 
 export const footerCareers = [
@@ -166,14 +202,87 @@ export const footerCareers = [
 
 export const footerContact = [
   { icon: "fas fa-map-marker-alt", text: "Dalmiyanagar, Rohtas, Bihar 821305" },
-  { icon: "fas fa-phone", text: "+91-XXXXXXXXXX" },
+  { icon: "fas fa-phone", text: "+91-09798560695" },
   { icon: "fas fa-envelope", text: "info@modernglobalschool.in" },
   { icon: "fas fa-clock", text: "Mon–Sat: 7:30 AM – 4:00 PM" }
 ];
 
+// SEO Keywords for Footer
+export const footerSEOKeywords = [
+  "Best School in Dalmiyanagar",
+  "Top CBSE School Rohtas",
+  "Quality Education Dehri on Sone",
+  "Best School in Dehri",
+  "Top School in Rohtas District",
+  "CBSE Affiliated School Dalmiyanagar",
+  "Best Primary School Rohtas",
+  "Top Education Dehri on Sone"
+];
+
+// Board Members Data
+export const boardMembers = [
+  {
+    name: "Mr. Rajesh Kumar",
+    designation: "Chairman",
+    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
+    quote: "Excellence in education is our commitment to every child's bright future."
+  },
+  {
+    name: "Mrs. Priya Sharma", 
+    designation: "Vice Chairman",
+    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
+    quote: "We believe in nurturing minds with values and academic excellence."
+  },
+  {
+    name: "Dr. Amit Singh",
+    designation: "Secretary",
+    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg", 
+    quote: "Quality education shapes the leaders of tomorrow."
+  },
+  {
+    name: "Mr. Sunil Agarwal",
+    designation: "Treasurer",
+    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
+    quote: "Investing in education is investing in our nation's future."
+  }
+];
+
+// Testimonials Data
+export const testimonialsData = [
+  {
+    id: "happy-parent",
+    title: "Happy Parent Testimonial",
+    videoSrc: "/videos/happy_parent_testimonial_about_school_modern_global_school_dalmiyanagar_dehri.mp4",
+    description: "A satisfied parent shares their experience about the school's quality education and caring environment."
+  },
+  {
+    id: "student-voice", 
+    title: "Student Testimonial",
+    videoSrc: "/videos/kid_talking_about_school_testimonial_modern_global_school_dalmiyanagar_dehri.mp4",
+    description: "Our student talks about their learning experience and school life at Modern Global School."
+  },
+  {
+    id: "parent-student",
+    title: "Parent & Student Together",
+    videoSrc: "/videos/parent_testimonial_with_kid_student_modern_global_school_dalmiyanagar_dehri.mp4", 
+    description: "A parent and student share their positive experiences and growth at our school."
+  },
+  {
+    id: "topper-parent",
+    title: "Topper's Parent Testimonial", 
+    videoSrc: "/videos/parent_testimonial_with_topper_student_modern_global_school_dalmiyanagar_dehri.mp4",
+    description: "Parents of our top-performing student share their journey and success story."
+  }
+];
+
+// Teaching Community Data
+export const teachingCommunityData = {
+  groupImage: "/latestimage/director_sir_addressing_ptm_crowd_modern_global_school_dalmiyanagar_dehri.jpeg", // Using PTM image as placeholder for staff community
+  message: "Our dedicated team of 20+ experienced educators brings passion, expertise, and care to every classroom. Together, we create an environment where learning thrives, creativity flourishes, and every child discovers their unique potential. With diverse backgrounds and specialized training, our teaching community is committed to nurturing tomorrow's leaders with knowledge, values, and confidence."
+};
+
 export const socials = [
   { i: "fab fa-facebook-f", l: "https://facebook.com" },
   { i: "fab fa-instagram", l: "https://instagram.com" },
-  { i: "fab fa-youtube", l: "https://youtube.com" },
-  { i: "fab fa-twitter", l: "https://twitter.com" }
+  { i: "fab fa-youtube", l: "https://youtube.com" }
 ];

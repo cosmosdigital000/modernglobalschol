@@ -92,7 +92,7 @@ export default function NoticeBoardPage() {
       <div className="bg-[#1E3A8A] py-12 px-4 text-center text-white">
         <h3 className="text-xl font-bold mb-2">Never Miss an Update</h3>
         <p className="text-blue-300 text-sm mb-5">Join our WhatsApp group or follow us on social media for instant notifications</p>
-        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer"
+        <a href="https://wa.me/919798560695" target="_blank" rel="noreferrer"
           className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1DB954] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm">
           <i className="fab fa-whatsapp text-lg" /> Join WhatsApp Group
         </a>

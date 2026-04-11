@@ -69,7 +69,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
                 Enquiry Received!
               </h3>
               <p className="text-gray-500 text-sm mb-6">Thank you! Our team will contact you shortly.</p>
-              <a href={`https://wa.me/91XXXXXXXXXX?text=Hi, I am ${encodeURIComponent(form.name)}. I want to enquire about ${encodeURIComponent(form.purpose || 'admission')} at Modern Global School.`}
+              <a href={`https://wa.me/919798560695?text=Hi, I am ${encodeURIComponent(form.name)}. I want to enquire about ${encodeURIComponent(form.purpose || 'admission')} at Modern Global School.`}
                 target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1DB954] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors">
                 <i className="fab fa-whatsapp text-lg" /> Chat on WhatsApp
@@ -137,7 +137,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
 
               <p className="text-center text-xs text-gray-400">
                 Or call us directly at{' '}
-                <a href="tel:+91XXXXXXXXXX" className="text-[#1D4ED8] font-semibold hover:underline">+91-XXXXXXXXXX</a>
+                <a href="tel:+919798560695" className="text-[#1D4ED8] font-semibold hover:underline">+91-09798560695</a>
               </p>
             </form>
           )}

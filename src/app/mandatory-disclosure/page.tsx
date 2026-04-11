@@ -125,7 +125,7 @@ export default function MandatoryDisclosurePage() {
             className="bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold px-6 py-3 rounded-full transition-colors text-sm flex items-center gap-2">
             <i className="fas fa-envelope" /> Email Us
           </a>
-          <a href="tel:+91XXXXXXXXXX"
+          <a href="tel:+919798560695"
             className="bg-white/20 hover:bg-white/30 text-white font-bold px-6 py-3 rounded-full transition-colors text-sm flex items-center gap-2">
             <i className="fas fa-phone" /> Call Us
           </a>

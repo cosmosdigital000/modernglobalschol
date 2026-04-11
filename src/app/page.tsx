@@ -10,7 +10,8 @@ import EnquiryModal from './components/EnquiryModal';
 import {
   statsData, uspData, facilitiesData, noticesData,
   admissionSteps, docs, contactInfo, galleryItems,
-  dresscodeData, timingData
+  dresscodeData, timingData, boardMembers, testimonialsData,
+  teachingCommunityData
 } from './data/schoolData';
 
 export default function Home() {
@@ -115,17 +116,17 @@ export default function Home() {
             </div>
             <div className="space-y-4" data-aos="fade-left">
               <div className="rounded-3xl overflow-hidden shadow-xl h-72">
-                <Image src="/landingpageschoolimage/modern global school morning prayer best cbse school in dalmiyanagar.jpg"
-                  alt="Morning Prayer" width={700} height={450} className="w-full h-full object-cover" />
+                <Image src="/latestimage/kids_playing_in_the_playground_modern_global_school_dalmiyanagar_dehri.jpeg"
+                  alt="Students Playing in Playground" width={700} height={450} className="w-full h-full object-cover" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-2xl overflow-hidden shadow-md h-40">
-                  <Image src="/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg"
-                    alt="Board Members" width={350} height={200} className="w-full h-full object-cover" />
+                  <Image src="/latestimage/school_beautiful_front2_modern_global_school_dalmiyanagar_dehri.jpeg"
+                    alt="Beautiful School Front" width={350} height={200} className="w-full h-full object-cover" />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-md h-40">
-                  <Image src="/latestimage/kids_playing_in_the_playground_modern_global_school_dalmiyanagar_dehri.jpeg"
-                    alt="Students playing" width={350} height={200} className="w-full h-full object-cover" />
+                  <Image src="/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg"
+                    alt="School Entrance" width={350} height={200} className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -142,7 +143,9 @@ export default function Home() {
               Meet Our Leadership
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          
+          {/* Director & Principal */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
             {[
               {
                 name: "Dr. Kr. Anshuman", role: "Director", img: "/latestimage/director_Kr_Anshuman_image_in_office_modern_global_school_dalmiyanagar_dehri.jpeg",
@@ -160,6 +163,26 @@ export default function Home() {
                 <div className="font-black text-[#1E3A8A] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
                 <div className="text-[#F97316] font-bold text-sm mb-4">{role}</div>
                 <p className="text-gray-500 text-sm leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Board Members */}
+          <div className="text-center mb-8" data-aos="fade-up">
+            <h3 className="text-2xl font-black text-[#1E3A8A]" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              Board Members
+            </h3>
+            <p className="text-gray-600 text-sm mt-2">Guiding our vision with wisdom and dedication</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {boardMembers.map(({ name, designation, image, quote }, i) => (
+              <div key={name} className="bg-gradient-to-b from-[#F8FAFC] to-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 80}>
+                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 ring-2 ring-[#1D4ED8]/10 shadow-md">
+                  <Image src={image} alt={name} width={80} height={80} className="w-full h-full object-cover object-top" />
+                </div>
+                <div className="font-bold text-[#1E3A8A] text-sm" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
+                <div className="text-[#F97316] font-semibold text-xs mb-2">{designation}</div>
+                <p className="text-gray-500 text-xs leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
               </div>
             ))}
           </div>
@@ -181,7 +204,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-3 mb-7">
                 {[
                   { icon: "fas fa-graduation-cap", title: "CBSE Curriculum", text: "Playgroup to Class VIII — strong foundation & skills", color: "#1D4ED8" },
-                  { icon: "fas fa-flask", title: "Science & Technology", text: "Smart labs, computer science & robotics for modern learners", color: "#16A34A" },
+                  { icon: "fas fa-flask", title: "Science & Technology", text: "Smart labs & computer science for modern learners", color: "#16A34A" },
                   { icon: "fas fa-palette", title: "Co-Curricular Activities", text: "Yoga, horse riding, music, art, sports & cultural events", color: "#F97316" }
                 ].map(({ icon, title, text, color }) => (
                   <div key={title} className="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-green-50">
@@ -201,16 +224,76 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4" data-aos="fade-left">
               {[
-                { src: "/latestimage/empty_junior_classroom_modern_global_school_dalmiyanagar.jpeg", label: "Junior Classroom" },
-                { src: "/latestimage/empty_kids_classroom_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Kids Classroom" },
-                { src: "/latestimage/cocurricular_activity_yoga_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Yoga Activity" },
-                { src: "/latestimage/cocurricular_activity_horse_riding_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Horse Riding" }
-              ].map(({ src, label }, i) => (
-                <div key={label} className={`rounded-2xl overflow-hidden shadow-md ${i === 0 ? 'col-span-2 h-48' : 'h-36'}`}>
+                { src: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Smart Teaching", span: "col-span-2 h-48" },
+                { src: "/latestimage/empty_junior_classroom_modern_global_school_dalmiyanagar.jpeg", label: "Junior Classroom", span: "h-36" },
+                { src: "/latestimage/empty_senior_classroom_modern_global_school_dalmiyanagar.jpeg", label: "Senior Classroom", span: "h-36" },
+                { src: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Senior Learning", span: "h-36" }
+              ].map(({ src, label, span }, i) => (
+                <div key={label} className={`rounded-2xl overflow-hidden shadow-md ${span}`}>
                   <Image src={src} alt={label} width={400} height={250} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLASSROOMS SHOWCASE ─────────────────────────────── */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <span className="text-[#7C3AED] font-bold text-sm uppercase tracking-widest">Our Inside Modern Classroom</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              Modern Learning Environments
+            </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              State-of-the-art classrooms equipped with modern teaching tools and interactive learning environments
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_kids_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                title: "Interactive Learning with Kids", 
+                desc: "Teachers engaging with young students in modern classrooms",
+                level: "Primary Classes"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                title: "Modern Teaching Methods", 
+                desc: "Contemporary teaching approaches in well-equipped classrooms",
+                level: "All Classes"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                title: "Advanced Learning Sessions", 
+                desc: "Senior students in focused learning environments",
+                level: "Higher Classes"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_junior_2_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                title: "Junior Class Teaching", 
+                desc: "Dedicated instruction for junior students",
+                level: "Junior Classes"
+              }
+            ].map(({ img, title, desc, level }, i) => (
+              <div key={title} className="bg-gradient-to-b from-[#F8FAFC] to-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay={i * 80}>
+                <div className="h-48 overflow-hidden">
+                  <Image src={img} alt={title} width={400} height={250} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-bold text-[#1E3A8A] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                      {title}
+                    </h3>
+                    <span className="bg-[#7C3AED]/10 text-[#7C3AED] text-xs font-semibold px-3 py-1 rounded-full">
+                      {level}
+                    </span>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -234,6 +317,99 @@ export default function Home() {
                 <p className="text-blue-200 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ─────────────────────────────────────── */}
+      <section className="py-20 bg-gradient-to-br from-[#FFF7ED] to-[#FEFBF3]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Testimonials</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              What Our Community Says
+            </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              Hear from our parents and students about their experiences at Modern Global School
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {testimonialsData.map(({ id, title, videoSrc, description }, i) => (
+              <div key={id} className="bg-white rounded-3xl p-4 shadow-lg border border-orange-100 card-hover" data-aos="fade-up" data-aos-delay={i * 100}>
+                <div className="aspect-[9/16] rounded-2xl overflow-hidden mb-4 bg-gray-100">
+                  <video 
+                    controls 
+                    className="w-full h-full object-cover"
+                  >
+                    <source src={videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="font-bold text-[#1E3A8A] text-base mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                  {title}
+                </h3>
+                <p className="text-gray-600 text-xs leading-relaxed mb-3">{description}</p>
+                <div className="flex items-center gap-2 text-[#F97316]">
+                  <i className="fas fa-play-circle text-sm" />
+                  <span className="text-xs font-semibold">Watch Now</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TEACHING COMMUNITY ──────────────────────────────── */}
+      <section className="py-20 bg-gradient-to-br from-[#F0FDF4] to-[#ECFDF5]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <span className="text-[#16A34A] font-bold text-sm uppercase tracking-widest">Our Team</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              Our Energetic Teaching Community
+            </h2>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-3xl overflow-hidden shadow-xl" data-aos="fade-right">
+              <Image 
+                src={teachingCommunityData.groupImage} 
+                alt="Teaching Staff Group Photo" 
+                width={600} 
+                height={400} 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div data-aos="fade-left">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-green-100">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-[#16A34A] flex items-center justify-center text-white">
+                    <i className="fas fa-users" />
+                  </div>
+                  <div>
+                    <h3 className="font-black text-[#1E3A8A] text-xl" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                      United in Excellence
+                    </h3>
+                    <p className="text-[#16A34A] font-semibold text-sm">Passionate • Experienced • Caring</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {teachingCommunityData.message}
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
+                    <div className="text-2xl font-black text-[#16A34A]">20+</div>
+                    <div className="text-xs text-gray-600 font-medium">Expert Teachers</div>
+                  </div>
+                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
+                    <div className="text-2xl font-black text-[#16A34A]">15+</div>
+                    <div className="text-xs text-gray-600 font-medium">Years Experience</div>
+                  </div>
+                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
+                    <div className="text-2xl font-black text-[#16A34A]">100%</div>
+                    <div className="text-xs text-gray-600 font-medium">Dedicated</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -382,7 +558,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {galleryItems.slice(0, 6).map(({ img, label }) => (
+            {galleryItems.slice(0, 9).map(({ img, label }) => (
               <div key={label} className="rounded-2xl overflow-hidden aspect-square shadow-md" data-aos="fade-up">
                 <Image src={img} alt={label} width={350} height={350} className="w-full h-full object-cover gallery-img" />
               </div>
@@ -513,7 +689,7 @@ export default function Home() {
               className="bg-white text-[#F97316] font-bold px-7 py-3 rounded-full hover:shadow-lg transition-all flex items-center gap-2">
               <i className="fas fa-user-plus" /> Enquire Now
             </button>
-            <a href="tel:+91XXXXXXXXXX" className="bg-white/20 hover:bg-white/30 text-white font-bold px-7 py-3 rounded-full border border-white/40 transition-all flex items-center gap-2">
+            <a href="tel:+919798560695" className="bg-white/20 hover:bg-white/30 text-white font-bold px-7 py-3 rounded-full border border-white/40 transition-all flex items-center gap-2">
               <i className="fas fa-phone" /> Call Now
             </a>
           </div>
@@ -529,7 +705,7 @@ export default function Home() {
       </button>
 
       {/* WhatsApp FAB */}
-      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer"
+      <a href="https://wa.me/919798560695" target="_blank" rel="noreferrer"
         className="whatsapp-btn bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl hover:bg-[#20BD5A] transition-colors">
         <i className="fab fa-whatsapp" />
       </a>

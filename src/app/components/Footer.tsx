@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { footerQuickLinks, footerAcademics, footerContact, socials } from '../data/schoolData';
+import { footerQuickLinks, footerAcademics, footerContact, socials, footerSEOKeywords } from '../data/schoolData';
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-white/20">
-              <Image src="/latestimage/logo_modern_global_school_dalmiyanagar_dehri.jpeg" alt="Logo" width={48} height={48} className="object-cover w-full h-full" />
+              <Image src="/latestimage/logo_modern_global_school_dalmiyanagar_dehri.jpg" alt="Logo" width={48} height={48} className="object-cover w-full h-full" />
             </div>
             <div>
               <div className="font-bold text-white text-sm leading-tight">Modern Global School</div>
@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed mb-5">
-            Nurturing young minds with quality education, strong values, and holistic development since 2005. Dalmiyanagar, Rohtas, Bihar.
+            Leading CBSE school in Dalmiyanagar providing quality education and holistic development since 2005. Serving as best school in Dalmiyanagar, serving Dehri on Sone and surrounding areas with excellence in academics, sports, and co-curricular activities.
           </p>
           <div className="flex gap-3">
             {socials.map(({ i, l }) => (
@@ -56,7 +56,7 @@ export default function Footer() {
           </ul>
           <div className="mt-5 p-3 bg-[#F97316]/10 rounded-xl border border-[#F97316]/20">
             <p className="text-xs text-[#FED7AA] font-semibold mb-1">Admissions Open 2026–27</p>
-            <p className="text-xs text-gray-400">Playgroup to Class VIII • CBSE Curriculum</p>
+            <p className="text-xs text-gray-400">Playgroup to Class VIII • CBSE Curriculum • Best School in Dalmiyanagar</p>
           </div>
         </div>
 
@@ -71,18 +71,32 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer"
+          <a href="https://wa.me/919798560695" target="_blank" rel="noreferrer"
             className="mt-5 flex items-center gap-2 bg-[#25D366] hover:bg-[#1db954] text-white text-sm font-semibold px-4 py-2.5 rounded-full transition-colors w-fit">
             <i className="fab fa-whatsapp text-lg" /> WhatsApp Us
           </a>
         </div>
       </div>
 
+      {/* SEO Keywords Section */}
+      <div className="border-t border-white/10 bg-[#0A1635]">
+        <div className="max-w-7xl mx-auto px-4 py-3">
+          <div className="flex flex-wrap gap-2 justify-center text-xs text-gray-500">
+            {footerSEOKeywords.map((keyword, index) => (
+              <span key={index} className="hover:text-[#F97316] transition-colors">
+                {keyword}
+                {index < footerSEOKeywords.length - 1 && <span className="mx-1 text-gray-600">•</span>}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500">
-          <p>© 2025 Modern Global School, Dalmiyanagar. All rights reserved.</p>
-          <p>CBSE Affiliated | Rohtas, Bihar 821305</p>
+          <p>© 2025 Modern Global School, Dalmiyanagar - Best CBSE School in Rohtas. All rights reserved.</p>
+          <p>CBSE Affiliated | Top School in Dehri on Sone | Rohtas, Bihar 821305</p>
         </div>
       </div>
     </footer>

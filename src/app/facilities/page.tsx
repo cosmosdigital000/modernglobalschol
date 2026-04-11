@@ -99,7 +99,7 @@ export default function FacilitiesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-md h-48">
-                <Image src="/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg"
+                <Image src="/latestimage/kids_musical_chair_with_teachers_activity_modern_global_school_dalmiyanagar_dehri.jpeg"
                   alt="Play Area" width={350} height={250} className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-md h-48">
@@ -137,7 +137,7 @@ export default function FacilitiesPage() {
             <div className="grid sm:grid-cols-3 gap-5">
               {[
                 { img: "/latestimage/corridor_premises_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Spacious Corridors" },
-                { img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Well-Maintained Steps" },
+                { img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.png", label: "Beautiful Premises" },
                 { img: "/latestimage/toilet_modern_global_school_dalmiyanagar.jpeg", label: "Hygienic Washrooms" }
               ].map(({ img, label }) => (
                 <div key={label} className="rounded-2xl overflow-hidden shadow-md">

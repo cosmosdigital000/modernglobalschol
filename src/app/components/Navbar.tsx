@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span><i className="fas fa-map-marker-alt mr-1.5" />Dalmiyanagar, Rohtas, Bihar 821305</span>
           <div className="flex gap-6">
-            <a href="tel:+91XXXXXXXXXX" className="hover:text-yellow-300 transition-colors"><i className="fas fa-phone mr-1" />+91-XXXXXXXXXX</a>
+            <a href="tel:+919798560695" className="hover:text-yellow-300 transition-colors"><i className="fas fa-phone mr-1" />+91-09798560695</a>
             <a href="mailto:info@modernglobalschool.in" className="hover:text-yellow-300 transition-colors"><i className="fas fa-envelope mr-1" />info@modernglobalschool.in</a>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
           <span>📢 Annual Sports Day 2026 — Stay Tuned!</span>
           <span>🏆 100% Result in Board Exams — Proud Moment!</span>
           <span>📚 New Digital Smart Classes Now Available</span>
-          <span>📞 Call +91-XXXXXXXXXX for Admission Enquiry</span>
+          <span>📞 Call +91-09798560695 for Admission Enquiry</span>
           <span>🎉 Admissions Open 2026–27 — Enroll Now!</span>
           <span>📢 Annual Sports Day 2026 — Stay Tuned!</span>
           <span>🏆 100% Result in Board Exams — Proud Moment!</span>
@@ -72,7 +72,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/#home" onClick={(e) => handleClick(e, '/#home')} className="flex items-center gap-3 shrink-0">
               <div className="w-11 h-11 rounded-full overflow-hidden ring-2 ring-[#1D4ED8]/20">
-                <Image src="/latestimage/logo_modern_global_school_dalmiyanagar_dehri.jpeg" alt="Modern Global School" width={44} height={44} className="object-cover w-full h-full" />
+                <Image src="/latestimage/logo_modern_global_school_dalmiyanagar_dehri.jpg" alt="Modern Global School" width={44} height={44} className="object-cover w-full h-full" />
               </div>
               <div className="hidden sm:block leading-tight">
                 <div className="font-bold text-[#1E3A8A] text-sm leading-none">Modern Global School</div>

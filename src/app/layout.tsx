@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Modern Global School | Best School in Dalmiyanagar, Rohtas 821305",
   description: "Modern Global School – Top-ranked CBSE school in Dalmiyanagar, Rohtas, Bihar 821305. Admissions open 2026–27. Playgroup to Class VIII. Excellence in education, sports & co-curriculars.",
-  keywords: "school in dalmiyanagar, best school rohtas, CBSE school dalmiyanagar, Modern Global School, school rohtas 821305, admission dalmiyanagar school, rohtas bihar school",
+  keywords: "school in dalmiyanagar, best school rohtas, CBSE school dalmiyanagar, Modern Global School, school rohtas 821305, admission dalmiyanagar school, rohtas bihar school, best school dehri on sone, top school dalmiyanagar, quality education rohtas, cbse affiliated school dehri, primary school rohtas district, best school in dehri, top cbse school bihar, school near dehri on sone",
   robots: "index, follow",
   openGraph: {
     title: "Modern Global School | Best School in Dalmiyanagar, Rohtas",
@@ -47,6 +47,8 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "School",
             "name": "Modern Global School",
+            "alternateName": "Best CBSE School in Dalmiyanagar",
+            "description": "Leading CBSE affiliated school in Dalmiyanagar, Rohtas providing quality education from Playgroup to Class VIII. Best school in Dehri on Sone area.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Dalmiyanagar",
@@ -55,8 +57,16 @@ export default function RootLayout({
               "postalCode": "821305",
               "addressCountry": "IN"
             },
-            "telephone": "+91-XXXXXXXXXX",
-            "url": "https://www.modernglobalschool.in"
+            "telephone": "+91-09798560695",
+            "email": "info@modernglobalschool.in",
+            "url": "https://www.modernglobalschool.in",
+            "areaServed": ["Dalmiyanagar", "Dehri on Sone", "Rohtas", "Bihar"],
+            "educationalCredentialAwarded": "CBSE Curriculum",
+            "priceRange": "Affordable",
+            "sameAs": [
+              "https://www.facebook.com/modernglobalschool",
+              "https://www.instagram.com/modernglobalschool"
+            ]
           })
         }} />
       </head>

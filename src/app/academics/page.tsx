@@ -16,7 +16,7 @@ const classrooms = [
   { img: "/latestimage/empty_junior_classroom_modern_global_school_dalmiyanagar.jpeg", label: "Junior Classroom" },
   { img: "/latestimage/empty_kids_classroom_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Kids Classroom" },
   { img: "/latestimage/empty_kids_classroom2_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Activity Room" },
-  { img: "/latestimage/empty_senior_classroom_modern_global_school_dalmiyanagar.jpeg", label: "Senior Classroom" },
+  { img: "/latestimage/empty_kids_classroom_modern_global_school_dalmiyanagar_dehri.jpeg", label: "Senior Classroom" },
   { img: "/landingpageschoolimage/modern global school indoor classroom image best cbse school in dalmiyanagar.webp", label: "Smart Classroom" }
 ];
 
@@ -80,6 +80,85 @@ export default function AcademicsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Classrooms in Action */}
+      <section className="py-20 bg-gradient-to-br from-[#F8FAFC] to-[#EFF6FF]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="text-[#7C3AED] font-bold text-sm uppercase tracking-widest">Learning in Action</span>
+            <h2 className="text-3xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              Our Classrooms with Students
+            </h2>
+            <p className="text-gray-500 mt-3 text-sm max-w-2xl mx-auto">
+              See our dedicated teachers engaging with students across different age groups in modern, well-equipped classrooms designed for interactive learning.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_kids_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Kids Classroom", 
+                desc: "Early learning with engaging activities for our youngest students",
+                level: "Playgroup - UKG",
+                color: "#F97316"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_junior_2_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Junior Classes", 
+                desc: "Building foundational skills in primary education",
+                level: "Class I - V",
+                color: "#1D4ED8"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Interactive Learning", 
+                desc: "Modern teaching methods with student participation",
+                level: "All Classes",
+                color: "#16A34A"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Senior Classes", 
+                desc: "Advanced learning for middle school students",
+                level: "Class VI - VIII",
+                color: "#7C3AED"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students2_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Advanced Sessions", 
+                desc: "Focused learning with experienced faculty",
+                level: "Higher Classes",
+                color: "#0891B2"
+              },
+              { 
+                img: "/latestimage/teacher_teaching_in_the_classroom_to_senior_students_2_modern_global_school_dalmiyanagar_dehri.jpeg", 
+                label: "Specialized Teaching", 
+                desc: "Subject-specific instruction and guidance",
+                level: "Senior Students",
+                color: "#DC2626"
+              }
+            ].map(({ img, label, desc, level, color }) => (
+              <div key={label} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover" data-aos="fade-up">
+                <div className="h-48 overflow-hidden">
+                  <Image src={img} alt={label} width={400} height={250} className="w-full h-full object-cover gallery-img" />
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-gray-800 text-sm">{label}</h3>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ 
+                      backgroundColor: color + '15', 
+                      color: color 
+                    }}>
+                      {level}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
