@@ -37,19 +37,19 @@ export default function Home() {
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full">
           <div className="max-w-2xl" data-aos="fade-right">
-            <span className="inline-block bg-[#F97316] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
+            <span className="inline-block bg-[#FF6B35] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
               CBSE Curriculum • Est. 2005
             </span>
-            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-              Modern Global<br /><span className="text-[#FCD34D]">School</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              Modern Global<br /><span className="text-[#FBBF24]">School</span>
             </h1>
-            <p className="text-lg text-blue-100 mb-3 font-medium">Dalmiyanagar, Rohtas, Bihar 821305</p>
-            <p className="text-base text-blue-200 mb-8 leading-relaxed max-w-lg">
+            <p className="text-xl md:text-2xl text-white mb-3 font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>Dalmianagar, Rohtas, Bihar 821305</p>
+            <p className="text-base text-gray-100 mb-8 leading-relaxed max-w-lg" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>
               Nurturing young minds with quality education, strong values, and holistic development. Where every child discovers their potential.
             </p>
             <div className="flex flex-wrap gap-4">
               <button onClick={() => setEnquiryOpen(true)}
-                className="bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold px-7 py-3.5 rounded-full transition-all shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 flex items-center gap-2">
+                className="bg-[#FF6B35] hover:bg-[#FF8E53] text-white font-bold px-7 py-3.5 rounded-full transition-all shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 flex items-center gap-2">
                 <i className="fas fa-user-plus" /> Enroll Now
               </button>
               <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' }); }}
@@ -85,16 +85,16 @@ export default function Home() {
       </section>
 
       {/* ── ABOUT US ─────────────────────────────────────────── */}
-      <section id="about" className="py-20 bg-[#EFF6FF]">
+      <section id="about" className="py-20 bg-gradient-to-br from-[#F3E8FF] to-[#EDE9FE]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div data-aos="fade-right">
-              <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">About Us</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">About Us</span>
+              <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 Building Future Leaders Since 2005
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Modern Global School, Dalmiyanagar is one of Rohtas&apos;s most trusted CBSE-affiliated institutions. For over a decade, we have been committed to providing world-class education that combines academic excellence with character development, sports, and co-curricular activities.
+                Modern Global School, Dalmianagar is one of Rohtas&apos;s most trusted institutions following CBSE curriculum. For over a decade, we have been committed to providing world-class education that combines academic excellence with character development, sports, and co-curricular activities.
               </p>
               <p className="text-gray-600 leading-relaxed mb-7">
                 Our mission is to empower every child with knowledge, skills, and values to succeed in a rapidly changing world. With experienced faculty, smart classrooms, and a nurturing environment, we ensure each student reaches their full potential.
@@ -106,8 +106,8 @@ export default function Home() {
                   { icon: "fas fa-star", label: "Core Values", text: "Integrity, Discipline & Excellence" },
                   { icon: "fas fa-certificate", label: "Curriculum", text: "CBSE Curriculum, Playgroup to Class VIII" }
                 ].map(({ icon, label, text }) => (
-                  <div key={label} className="bg-white rounded-xl p-4 shadow-sm border border-blue-50">
-                    <i className={`${icon} text-[#1D4ED8] text-lg mb-2`} />
+                  <div key={label} className="bg-white rounded-xl p-4 shadow-sm border border-purple-100">
+                    <i className={`${icon} text-[#8B5CF6] text-lg mb-2`} />
                     <div className="font-bold text-gray-800 text-sm">{label}</div>
                     <div className="text-xs text-gray-500 mt-0.5">{text}</div>
                   </div>
@@ -138,8 +138,8 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Leadership</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">Leadership</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Meet Our Leadership
             </h2>
           </div>
@@ -149,19 +149,19 @@ export default function Home() {
             {[
               {
                 name: "Dr. Kr. Anshuman", role: "Director", img: "/latestimage/director_Kr_Anshuman_image_in_office_modern_global_school_dalmiyanagar_dehri.jpeg",
-                quote: "Education is the most powerful tool we have. At Modern Global, we strive to ignite curiosity and build confident, compassionate young leaders."
+                quote: "In today's rapidly evolving digital era, we're preparing students for careers that don't exist yet. Through AI-integrated learning, smart classrooms, and future-ready skills, we're building tomorrow's innovators and digital leaders."
               },
               {
                 name: "Mrs. Kumkum Agarwal", role: "Principal", img: "/latestimage/Principal_Kumkum_Agarwal_modern_global_school_dalmiyanagar_dehri.jpeg",
                 quote: "Our classrooms are designed to nurture every child's unique talent. We believe in making learning joyful, meaningful and impactful."
               }
             ].map(({ name, role, img, quote }, i) => (
-              <div key={name} className="bg-gradient-to-b from-[#EFF6FF] to-white rounded-3xl p-6 shadow-md border border-blue-50 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 100}>
-                <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-[#1D4ED8]/20 shadow-lg">
+              <div key={name} className="bg-gradient-to-b from-[#F3E8FF] to-white rounded-3xl p-6 shadow-md border border-purple-100 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 100}>
+                <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-[#8B5CF6]/20 shadow-lg">
                   <Image src={img} alt={name} width={112} height={112} className="w-full h-full object-cover object-top" />
                 </div>
-                <div className="font-black text-[#1E3A8A] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
-                <div className="text-[#F97316] font-bold text-sm mb-4">{role}</div>
+                <div className="font-black text-[#7C3AED] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
+                <div className="text-[#FF6B35] font-bold text-sm mb-4">{role}</div>
                 <p className="text-gray-500 text-sm leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
               </div>
             ))}
@@ -169,19 +169,19 @@ export default function Home() {
 
           {/* Board Members */}
           <div className="text-center mb-8" data-aos="fade-up">
-            <h3 className="text-2xl font-black text-[#1E3A8A]" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <h3 className="text-2xl font-black text-[#7C3AED]" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Board Members
             </h3>
             <p className="text-gray-600 text-sm mt-2">Guiding our vision with wisdom and dedication</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {boardMembers.map(({ name, designation, image, quote }, i) => (
-              <div key={name} className="bg-gradient-to-b from-[#F8FAFC] to-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 80}>
-                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 ring-2 ring-[#1D4ED8]/10 shadow-md">
+              <div key={name} className="bg-gradient-to-b from-[#FAF5FF] to-white rounded-2xl p-4 shadow-sm border border-purple-100 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 80}>
+                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 ring-2 ring-[#8B5CF6]/10 shadow-md">
                   <Image src={image} alt={name} width={80} height={80} className="w-full h-full object-cover object-top" />
                 </div>
-                <div className="font-bold text-[#1E3A8A] text-sm" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
-                <div className="text-[#F97316] font-semibold text-xs mb-2">{designation}</div>
+                <div className="font-bold text-[#7C3AED] text-sm" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
+                <div className="text-[#FF6B35] font-semibold text-xs mb-2">{designation}</div>
                 <p className="text-gray-500 text-xs leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
               </div>
             ))}
@@ -190,12 +190,12 @@ export default function Home() {
       </section>
 
       {/* ── ACADEMICS PREVIEW ────────────────────────────────── */}
-      <section id="academics" className="py-20 bg-gradient-to-br from-[#F0FDF4] to-[#ECFDF5]">
+      <section id="academics" className="py-20 bg-gradient-to-br from-[#ECFDF5] to-[#D1FAE5]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-              <span className="text-[#16A34A] font-bold text-sm uppercase tracking-widest">Academics</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <span className="text-[#10B981] font-bold text-sm uppercase tracking-widest">Academics</span>
+              <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 Excellence in Education
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -203,9 +203,9 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 gap-3 mb-7">
                 {[
-                  { icon: "fas fa-graduation-cap", title: "CBSE Curriculum", text: "Playgroup to Class VIII — strong foundation & skills", color: "#1D4ED8" },
-                  { icon: "fas fa-flask", title: "Science & Technology", text: "Smart labs & computer science for modern learners", color: "#16A34A" },
-                  { icon: "fas fa-palette", title: "Co-Curricular Activities", text: "Yoga, horse riding, music, art, sports & cultural events", color: "#F97316" }
+                  { icon: "fas fa-graduation-cap", title: "CBSE Curriculum", text: "Playgroup to Class VIII — strong foundation & skills", color: "#8B5CF6" },
+                  { icon: "fas fa-flask", title: "Science & Technology", text: "Smart labs & computer science for modern learners", color: "#10B981" },
+                  { icon: "fas fa-palette", title: "Co-Curricular Activities", text: "Yoga, horse riding, music, art, sports & cultural events", color: "#FF6B35" }
                 ].map(({ icon, title, text, color }) => (
                   <div key={title} className="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-green-50">
                     <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: color + '15' }}>
@@ -218,7 +218,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <Link href="/academics" className="inline-flex items-center gap-2 bg-[#16A34A] hover:bg-[#15803D] text-white font-bold px-6 py-3 rounded-full transition-colors shadow-md">
+              <Link href="/academics" className="inline-flex items-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white font-bold px-6 py-3 rounded-full transition-colors shadow-md">
                 Explore Full Academics <i className="fas fa-arrow-right" />
               </Link>
             </div>
@@ -242,8 +242,8 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#7C3AED] font-bold text-sm uppercase tracking-widest">Our Inside Modern Classroom</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#A855F7] font-bold text-sm uppercase tracking-widest">Our Inside Modern Classroom</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Modern Learning Environments
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -277,16 +277,16 @@ export default function Home() {
                 level: "Junior Classes"
               }
             ].map(({ img, title, desc, level }, i) => (
-              <div key={title} className="bg-gradient-to-b from-[#F8FAFC] to-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay={i * 80}>
+              <div key={title} className="bg-gradient-to-b from-[#FAF5FF] to-white rounded-3xl overflow-hidden shadow-lg border border-purple-100 card-hover" data-aos="fade-up" data-aos-delay={i * 80}>
                 <div className="h-48 overflow-hidden">
                   <Image src={img} alt={title} width={400} height={250} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="font-bold text-[#1E3A8A] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <h3 className="font-bold text-[#7C3AED] text-lg" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       {title}
                     </h3>
-                    <span className="bg-[#7C3AED]/10 text-[#7C3AED] text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-[#A855F7]/10 text-[#A855F7] text-xs font-semibold px-3 py-1 rounded-full">
                       {level}
                     </span>
                   </div>
@@ -299,10 +299,10 @@ export default function Home() {
       </section>
 
       {/* ── WHY CHOOSE US ───────────────────────────────────── */}
-      <section className="py-20 bg-[#1E3A8A]">
+      <section className="py-20 bg-gradient-to-br from-[#7C3AED] to-[#5B21B6]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#FCD34D] font-bold text-sm uppercase tracking-widest">Why Choose Us</span>
+            <span className="text-[#FBBF24] font-bold text-sm uppercase tracking-widest">Why Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-black text-white mt-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               What Makes Us Different
             </h2>
@@ -310,7 +310,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {uspData.map(({ icon, title, desc }, i) => (
               <div key={title} className="bg-white/10 hover:bg-white/15 rounded-2xl p-6 border border-white/10 transition-all card-hover" data-aos="fade-up" data-aos-delay={i * 80}>
-                <div className="w-12 h-12 rounded-xl bg-[#F97316] flex items-center justify-center mb-4 text-white text-lg">
+                <div className="w-12 h-12 rounded-xl bg-[#FF6B35] flex items-center justify-center mb-4 text-white text-lg">
                   <i className={icon} />
                 </div>
                 <h3 className="text-white font-bold text-base mb-2">{title}</h3>
@@ -322,11 +322,11 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────── */}
-      <section className="py-20 bg-gradient-to-br from-[#FFF7ED] to-[#FEFBF3]">
+      <section className="py-20 bg-gradient-to-br from-[#FFF4ED] to-[#FED7AA]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Testimonials</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">Testimonials</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               What Our Community Says
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -335,7 +335,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {testimonialsData.map(({ id, title, videoSrc, description }, i) => (
-              <div key={id} className="bg-white rounded-3xl p-4 shadow-lg border border-orange-100 card-hover" data-aos="fade-up" data-aos-delay={i * 100}>
+              <div key={id} className="bg-white rounded-3xl p-4 shadow-lg border border-orange-200 card-hover" data-aos="fade-up" data-aos-delay={i * 100}>
                 <div className="aspect-[9/16] rounded-2xl overflow-hidden mb-4 bg-gray-100">
                   <video 
                     controls 
@@ -345,11 +345,11 @@ export default function Home() {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <h3 className="font-bold text-[#1E3A8A] text-base mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                <h3 className="font-bold text-[#7C3AED] text-base mb-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                   {title}
                 </h3>
                 <p className="text-gray-600 text-xs leading-relaxed mb-3">{description}</p>
-                <div className="flex items-center gap-2 text-[#F97316]">
+                <div className="flex items-center gap-2 text-[#FF6B35]">
                   <i className="fas fa-play-circle text-sm" />
                   <span className="text-xs font-semibold">Watch Now</span>
                 </div>
@@ -360,11 +360,11 @@ export default function Home() {
       </section>
 
       {/* ── TEACHING COMMUNITY ──────────────────────────────── */}
-      <section className="py-20 bg-gradient-to-br from-[#F0FDF4] to-[#ECFDF5]">
+      <section className="py-20 bg-gradient-to-br from-[#ECFDF5] to-[#A7F3D0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#16A34A] font-bold text-sm uppercase tracking-widest">Our Team</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#10B981] font-bold text-sm uppercase tracking-widest">Our Team</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Our Energetic Teaching Community
             </h2>
           </div>
@@ -379,32 +379,32 @@ export default function Home() {
               />
             </div>
             <div data-aos="fade-left">
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-green-100">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-green-200">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-[#16A34A] flex items-center justify-center text-white">
+                  <div className="w-12 h-12 rounded-xl bg-[#10B981] flex items-center justify-center text-white">
                     <i className="fas fa-users" />
                   </div>
                   <div>
-                    <h3 className="font-black text-[#1E3A8A] text-xl" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+                    <h3 className="font-black text-[#7C3AED] text-xl" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                       United in Excellence
                     </h3>
-                    <p className="text-[#16A34A] font-semibold text-sm">Passionate • Experienced • Caring</p>
+                    <p className="text-[#10B981] font-semibold text-sm">Passionate • Experienced • Caring</p>
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {teachingCommunityData.message}
                 </p>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
-                    <div className="text-2xl font-black text-[#16A34A]">20+</div>
+                  <div className="text-center p-4 bg-[#ECFDF5] rounded-xl border border-green-200">
+                    <div className="text-2xl font-black text-[#10B981]">20+</div>
                     <div className="text-xs text-gray-600 font-medium">Expert Teachers</div>
                   </div>
-                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
-                    <div className="text-2xl font-black text-[#16A34A]">15+</div>
+                  <div className="text-center p-4 bg-[#ECFDF5] rounded-xl border border-green-200">
+                    <div className="text-2xl font-black text-[#10B981]">15+</div>
                     <div className="text-xs text-gray-600 font-medium">Years Experience</div>
                   </div>
-                  <div className="text-center p-4 bg-[#F0FDF4] rounded-xl border border-green-100">
-                    <div className="text-2xl font-black text-[#16A34A]">100%</div>
+                  <div className="text-center p-4 bg-[#ECFDF5] rounded-xl border border-green-200">
+                    <div className="text-2xl font-black text-[#10B981]">100%</div>
                     <div className="text-xs text-gray-600 font-medium">Dedicated</div>
                   </div>
                 </div>
@@ -418,8 +418,8 @@ export default function Home() {
       <section id="admission" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Admissions 2026–27</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">Admissions 2026–27</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Simple Admission Process
             </h2>
           </div>
@@ -428,10 +428,10 @@ export default function Home() {
             <div className="lg:col-span-2">
               <div className="grid sm:grid-cols-2 gap-5 mb-8">
                 {admissionSteps.map(({ step, title, desc, icon }) => (
-                  <div key={step} className="flex gap-4 bg-[#EFF6FF] rounded-2xl p-5 border border-blue-100 card-hover" data-aos="fade-up">
-                    <div className="step-circle bg-[#1D4ED8] text-white shrink-0">{step}</div>
+                  <div key={step} className="flex gap-4 bg-[#F3E8FF] rounded-2xl p-5 border border-purple-100 card-hover" data-aos="fade-up">
+                    <div className="step-circle bg-[#8B5CF6] text-white shrink-0">{step}</div>
                     <div>
-                      <i className={`${icon} text-[#F97316] mb-1 text-sm`} />
+                      <i className={`${icon} text-[#FF6B35] mb-1 text-sm`} />
                       <h3 className="font-bold text-gray-800 text-sm mb-1">{title}</h3>
                       <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
                     </div>
@@ -449,20 +449,20 @@ export default function Home() {
 
             {/* Docs + CTA */}
             <div data-aos="fade-left">
-              <div className="bg-gradient-to-b from-[#FFF7ED] to-white rounded-3xl p-6 border border-orange-100 shadow-sm mb-5">
-                <h3 className="font-bold text-[#1E3A8A] text-base mb-4 flex items-center gap-2">
-                  <i className="fas fa-folder-open text-[#F97316]" /> Documents Required
+              <div className="bg-gradient-to-b from-[#FFF4ED] to-white rounded-3xl p-6 border border-orange-200 shadow-sm mb-5">
+                <h3 className="font-bold text-[#7C3AED] text-base mb-4 flex items-center gap-2">
+                  <i className="fas fa-folder-open text-[#FF6B35]" /> Documents Required
                 </h3>
                 <ul className="space-y-2">
                   {docs.map((d) => (
                     <li key={d} className="flex items-center gap-2 text-sm text-gray-600">
-                      <i className="fas fa-check-circle text-[#16A34A] text-xs" />{d}
+                      <i className="fas fa-check-circle text-[#10B981] text-xs" />{d}
                     </li>
                   ))}
                 </ul>
               </div>
               <button onClick={() => setEnquiryOpen(true)}
-                className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold py-4 px-6 rounded-2xl transition-colors shadow-lg text-sm w-full">
+                className="flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#FF8E53] text-white font-bold py-4 px-6 rounded-2xl transition-colors shadow-lg text-sm w-full">
                 <i className="fas fa-paper-plane" /> Submit Admission Enquiry
               </button>
               <p className="text-xs text-gray-400 text-center mt-3">Playgroup to Class VIII • CBSE Curriculum • Rohtas, Bihar</p>
@@ -472,16 +472,16 @@ export default function Home() {
       </section>
 
       {/* ── FACILITIES PREVIEW ──────────────────────────────── */}
-      <section id="facilities" className="py-20 bg-[#F8FAFC]">
+      <section id="facilities" className="py-20 bg-gradient-to-br from-[#F1F5F9] to-[#E2E8F0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4" data-aos="fade-up">
             <div>
-              <span className="text-[#0891B2] font-bold text-sm uppercase tracking-widest">Our Facilities</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <span className="text-[#06B6D4] font-bold text-sm uppercase tracking-widest">Our Facilities</span>
+              <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 World-Class Infrastructure
               </h2>
             </div>
-            <Link href="/facilities" className="shrink-0 inline-flex items-center gap-2 text-[#0891B2] font-bold border-2 border-[#0891B2] px-5 py-2.5 rounded-full hover:bg-[#0891B2] hover:text-white transition-all text-sm">
+            <Link href="/facilities" className="shrink-0 inline-flex items-center gap-2 text-[#06B6D4] font-bold border-2 border-[#06B6D4] px-5 py-2.5 rounded-full hover:bg-[#06B6D4] hover:text-white transition-all text-sm">
               View All Facilities <i className="fas fa-arrow-right" />
             </Link>
           </div>
@@ -493,13 +493,13 @@ export default function Home() {
                     <Image src={img} alt={name} width={400} height={220} className="w-full h-full object-cover gallery-img" />
                   </div>
                 ) : (
-                  <div className="h-44 bg-gradient-to-br from-[#EFF6FF] to-[#DBEAFE] flex items-center justify-center">
-                    <i className={`${icon} text-5xl text-[#1D4ED8]/30`} />
+                  <div className="h-44 bg-gradient-to-br from-[#E0F7FA] to-[#B2EBF2] flex items-center justify-center">
+                    <i className={`${icon} text-5xl text-[#06B6D4]/50`} />
                   </div>
                 )}
                 <div className="p-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-[#EFF6FF] flex items-center justify-center text-[#1D4ED8] shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-[#E0F7FA] flex items-center justify-center text-[#06B6D4] shrink-0">
                       <i className={icon} />
                     </div>
                     <div>
@@ -519,18 +519,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4" data-aos="fade-up">
             <div>
-              <span className="text-[#DC2626] font-bold text-sm uppercase tracking-widest">Latest Updates</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+              <span className="text-[#EF4444] font-bold text-sm uppercase tracking-widest">Latest Updates</span>
+              <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 Notice Board
               </h2>
             </div>
-            <Link href="/notice-board" className="shrink-0 inline-flex items-center gap-2 text-[#DC2626] font-bold border-2 border-[#DC2626] px-5 py-2.5 rounded-full hover:bg-[#DC2626] hover:text-white transition-all text-sm">
+            <Link href="/notice-board" className="shrink-0 inline-flex items-center gap-2 text-[#EF4444] font-bold border-2 border-[#EF4444] px-5 py-2.5 rounded-full hover:bg-[#EF4444] hover:text-white transition-all text-sm">
               View All Notices <i className="fas fa-arrow-right" />
             </Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {noticesData.slice(0, 3).map(({ date, badge, title, text, badgeBg, badgeColor }) => (
-              <div key={title} className="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-[#1D4ED8] hover:border-[#F97316] hover:bg-[#FFF7ED] transition-all card-hover" data-aos="fade-up">
+              <div key={title} className="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-[#8B5CF6] hover:border-[#FF6B35] hover:bg-[#FFF4ED] transition-all card-hover" data-aos="fade-up">
                 <div className="flex justify-between items-start mb-3">
                   <span className="badge text-xs font-bold px-3 py-1 rounded-full" style={{ background: badgeBg, color: badgeColor }}>{badge}</span>
                   <span className="text-xs text-gray-400 flex items-center gap-1"><i className="fas fa-calendar-alt" />{date}</span>
@@ -544,16 +544,16 @@ export default function Home() {
       </section>
 
       {/* ── GALLERY PREVIEW ─────────────────────────────────── */}
-      <section id="gallery" className="py-20 bg-[#0F1F4A]">
+      <section id="gallery" className="py-20 bg-gradient-to-br from-[#1E1B4B] to-[#312E81]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4" data-aos="fade-up">
             <div>
-              <span className="text-[#FCD34D] font-bold text-sm uppercase tracking-widest">Photo Gallery</span>
+              <span className="text-[#FBBF24] font-bold text-sm uppercase tracking-widest">Photo Gallery</span>
               <h2 className="text-3xl md:text-4xl font-black text-white mt-2" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
                 Life at Modern Global
               </h2>
             </div>
-            <Link href="/gallery" className="shrink-0 inline-flex items-center gap-2 text-[#FCD34D] font-bold border-2 border-[#FCD34D] px-5 py-2.5 rounded-full hover:bg-[#FCD34D] hover:text-[#0F1F4A] transition-all text-sm">
+            <Link href="/gallery" className="shrink-0 inline-flex items-center gap-2 text-[#FBBF24] font-bold border-2 border-[#FBBF24] px-5 py-2.5 rounded-full hover:bg-[#FBBF24] hover:text-[#1E1B4B] transition-all text-sm">
               View Full Gallery <i className="fas fa-arrow-right" />
             </Link>
           </div>
@@ -568,38 +568,38 @@ export default function Home() {
       </section>
 
       {/* ── SCHOOL TIMING + DRESSCODE ───────────────────────── */}
-      <section className="py-20 bg-[#F8FAFC]">
+      <section className="py-20 bg-gradient-to-br from-[#FAF5FF] to-[#F3E8FF]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#7C3AED] font-bold text-sm uppercase tracking-widest">School Schedule</span>
-            <h2 className="text-3xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#A855F7] font-bold text-sm uppercase tracking-widest">School Schedule</span>
+            <h2 className="text-3xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Timings & Dress Code
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Timing */}
             <div className="bg-white rounded-3xl p-7 shadow-sm border border-gray-100" data-aos="fade-right">
-              <h3 className="font-bold text-[#1E3A8A] text-lg mb-5 flex items-center gap-2">
-                <i className="fas fa-clock text-[#0891B2]" /> School Timings
+              <h3 className="font-bold text-[#7C3AED] text-lg mb-5 flex items-center gap-2">
+                <i className="fas fa-clock text-[#06B6D4]" /> School Timings
               </h3>
               <div className="space-y-3">
                 {timingData.map(({ label, time }) => (
                   <div key={label} className="flex justify-between items-center py-2.5 border-b border-gray-50 last:border-0">
                     <span className="text-sm font-medium text-gray-700">{label}</span>
-                    <span className="text-sm font-bold text-[#1D4ED8] bg-[#EFF6FF] px-3 py-1 rounded-full">{time}</span>
+                    <span className="text-sm font-bold text-[#8B5CF6] bg-[#F3E8FF] px-3 py-1 rounded-full">{time}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* Dress Code */}
             <div className="bg-white rounded-3xl p-7 shadow-sm border border-gray-100" data-aos="fade-left">
-              <h3 className="font-bold text-[#1E3A8A] text-lg mb-5 flex items-center gap-2">
-                <i className="fas fa-tshirt text-[#F97316]" /> Dress Code
+              <h3 className="font-bold text-[#7C3AED] text-lg mb-5 flex items-center gap-2">
+                <i className="fas fa-tshirt text-[#FF6B35]" /> Dress Code
               </h3>
               <div className="space-y-4">
                 {dresscodeData.map(({ label, text }) => (
                   <div key={label} className="flex gap-4 items-start">
-                    <span className="shrink-0 bg-[#FFF7ED] text-[#F97316] font-bold text-xs px-3 py-1.5 rounded-full border border-orange-100">{label}</span>
+                    <span className="shrink-0 bg-[#FFF4ED] text-[#FF6B35] font-bold text-xs px-3 py-1.5 rounded-full border border-orange-200">{label}</span>
                     <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
                   </div>
                 ))}
@@ -613,25 +613,25 @@ export default function Home() {
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
-            <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Get In Touch</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#1E3A8A] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
+            <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">Get In Touch</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 section-line center" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
               Contact Us
             </h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
-            <div className="bg-[#EFF6FF] rounded-3xl p-7 shadow-sm" data-aos="fade-right">
-              <h3 className="font-bold text-[#1E3A8A] text-lg mb-6">Send Us a Message</h3>
+            <div className="bg-[#F3E8FF] rounded-3xl p-7 shadow-sm" data-aos="fade-right">
+              <h3 className="font-bold text-[#7C3AED] text-lg mb-6">Send Us a Message</h3>
               {formSent ? (
                 <div className="text-center py-10">
-                  <i className="fas fa-check-circle text-5xl text-[#16A34A] mb-4" />
+                  <i className="fas fa-check-circle text-5xl text-[#10B981] mb-4" />
                   <p className="font-bold text-gray-700 text-lg">Message Sent!</p>
                   <p className="text-gray-500 text-sm mt-1">We will get back to you soon.</p>
                 </div>
               ) : (
                 <form onSubmit={(e) => { e.preventDefault(); setFormSent(true); }} className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <input required placeholder="Your Name" className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm w-full focus:ring-2 focus:ring-[#1D4ED8]/20" />
+                    <input required placeholder="Your Name" className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm w-full focus:ring-2 focus:ring-[#8B5CF6]/20" />
                     <input required placeholder="Phone Number" type="tel" className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm w-full" />
                   </div>
                   <input placeholder="Email Address" type="email" className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm w-full" />
@@ -642,7 +642,7 @@ export default function Home() {
                     <option>Feedback</option>
                   </select>
                   <textarea required placeholder="Your Message" rows={4} className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm w-full resize-none" />
-                  <button type="submit" className="w-full bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-bold py-3.5 rounded-xl transition-colors shadow-md">
+                  <button type="submit" className="w-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-bold py-3.5 rounded-xl transition-colors shadow-md">
                     <i className="fas fa-paper-plane mr-2" />Send Message
                   </button>
                 </form>
@@ -666,10 +666,10 @@ export default function Home() {
                 </div>
               ))}
               {/* Map embed placeholder */}
-              <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-40 bg-[#EFF6FF] flex items-center justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-40 bg-[#F3E8FF] flex items-center justify-center">
                 <div className="text-center text-gray-400">
-                  <i className="fas fa-map-marked-alt text-3xl mb-2 text-[#1D4ED8]/40" />
-                  <p className="text-xs">Dalmiyanagar, Rohtas, Bihar 821305</p>
+                  <i className="fas fa-map-marked-alt text-3xl mb-2 text-[#8B5CF6]/40" />
+                  <p className="text-xs">Dalmianagar, Rohtas, Bihar 821305</p>
                 </div>
               </div>
             </div>
@@ -678,7 +678,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA STRIP ────────────────────────────────────────── */}
-      <section className="bg-gradient-to-r from-[#F97316] to-[#EA580C] py-12">
+      <section className="bg-gradient-to-r from-[#FF6B35] to-[#FF8E53] py-12">
         <div className="max-w-4xl mx-auto px-4 text-center text-white" data-aos="fade-up">
           <h2 className="text-2xl md:text-3xl font-black mb-3" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
             Give Your Child the Best Start in Life
@@ -686,7 +686,7 @@ export default function Home() {
           <p className="text-orange-100 mb-6 text-sm">Admissions Open for 2026–27 | Playgroup to Class VIII | CBSE Curriculum</p>
           <div className="flex flex-wrap justify-center gap-4">
             <button onClick={() => setEnquiryOpen(true)}
-              className="bg-white text-[#F97316] font-bold px-7 py-3 rounded-full hover:shadow-lg transition-all flex items-center gap-2">
+              className="bg-white text-[#FF6B35] font-bold px-7 py-3 rounded-full hover:shadow-lg transition-all flex items-center gap-2">
               <i className="fas fa-user-plus" /> Enquire Now
             </button>
             <a href="tel:+919798560695" className="bg-white/20 hover:bg-white/30 text-white font-bold px-7 py-3 rounded-full border border-white/40 transition-all flex items-center gap-2">
@@ -700,7 +700,7 @@ export default function Home() {
 
       {/* Scroll to Top */}
       <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`scroll-top bg-[#1D4ED8] text-white w-11 h-11 rounded-full shadow-lg flex items-center justify-center text-sm ${showScrollTop ? 'show' : ''}`}>
+        className={`scroll-top bg-[#8B5CF6] text-white w-11 h-11 rounded-full shadow-lg flex items-center justify-center text-sm ${showScrollTop ? 'show' : ''}`}>
         <i className="fas fa-chevron-up" />
       </button>
 

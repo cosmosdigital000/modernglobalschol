@@ -106,7 +106,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
                 <select required value={form.purpose} onChange={(e) => setForm({ ...form, purpose: e.target.value })}
                   className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-gray-200 bg-gray-50 text-sm focus:border-[#1D4ED8] focus:bg-white transition-all outline-none appearance-none text-gray-600">
                   <option value="">Select Purpose</option>
-                  <option>New Admission – Playgroup / Nursery</option>
+                  <option>New Admission – Nursery</option>
                   <option>New Admission – LKG / UKG</option>
                   <option>New Admission – Class I to V</option>
                   <option>New Admission – Class VI to VIII</option>

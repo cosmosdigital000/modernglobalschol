@@ -27,15 +27,16 @@ export const facilitiesData = [
   { icon: "fas fa-restroom", name: "Hygienic Washrooms", desc: "Clean and separate washrooms for boys & girls", img: "/latestimage/toilet_modern_global_school_dalmiyanagar.jpeg" },
   { icon: "fas fa-building", name: "Safe Infrastructure", desc: "Well-maintained building with safe access", img: "/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { icon: "fas fa-car", name: "Parking Area", desc: "Safe and secure parking facility", img: "/latestimage/parking_modern_global_school_dalmiyanagar_dehri.jpeg" },
-  { icon: "fas fa-desk", name: "Reception", desc: "Welcoming reception and inquiry counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" }
+  { icon: "fas fa-desk", name: "Reception", desc: "Welcoming reception and inquiry counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-snowflake", name: "Air Cooled Nursery Classroom", desc: "Comfortable climate-controlled learning environment for youngest learners", img: "/latestimage/empty_kids_classroom_modern_global_school_dalmiyanagar_dehri.jpeg" }
 ];
 
 export const noticesData = [
-  { date: "10 Mar 2026", badge: "Exam", title: "Half-Yearly Exam Schedule Announced", text: "Half-yearly examinations will be held from March 20–31, 2026. Students are advised to prepare thoroughly.", color: "#DC2626", badgeBg: "#FEF2F2", badgeColor: "#DC2626" },
-  { date: "05 Mar 2026", badge: "Event", title: "Annual Sports Day — 15 March 2026", text: "All parents are cordially invited to witness our annual sports day celebration. Students must arrive by 8:00 AM.", color: "#2563EB", badgeBg: "#EFF6FF", badgeColor: "#2563EB" },
-  { date: "01 Mar 2026", badge: "Admission", title: "Admissions Open for 2026–27", text: "Admissions are now open for Playgroup to Class VIII for the academic session 2026–27. Visit the office to collect the form.", color: "#16A34A", badgeBg: "#F0FDF4", badgeColor: "#16A34A" },
-  { date: "25 Feb 2026", badge: "Holiday", title: "Holi Holiday Notice", text: "School will remain closed on Holi (14–15 March 2026). Regular classes resume on 17th March 2026.", color: "#F59E0B", badgeBg: "#FFFBEB", badgeColor: "#B45309" },
-  { date: "20 Feb 2026", badge: "Result", title: "Annual Assessment Results 2025–26", text: "We are proud to announce excellent results in our Annual Assessments 2025–26. Toppers felicitation ceremony on March 25.", color: "#DC2626", badgeBg: "#FEF2F2", badgeColor: "#DC2626" }
+  { date: "15 Apr 2026", badge: "Exam", title: "Annual Examination Schedule - May 2026", text: "Annual examinations for all classes will be conducted from May 15-30, 2026. Detailed time table available in office.", color: "#DC2626", badgeBg: "#FEF2F2", badgeColor: "#DC2626" },
+  { date: "10 Apr 2026", badge: "Holiday", title: "Holiday List 2026-27", text: "Complete holiday list for academic session 2026-27 is now available. Check with class teachers for printed copies.", color: "#F59E0B", badgeBg: "#FFFBEB", badgeColor: "#B45309" },
+  { date: "08 Apr 2026", badge: "Event", title: "Upcoming Events - April & May 2026", text: "Annual Sports Day (April 25), Science Exhibition (May 5), Parents Meeting (May 12). More details to follow.", color: "#2563EB", badgeBg: "#EFF6FF", badgeColor: "#2563EB" },
+  { date: "05 Apr 2026", badge: "Notice", title: "Mid-Term Assessment - April 2026", text: "Mid-term assessments for Classes I-VIII will be held from April 20-25, 2026. Students should prepare accordingly.", color: "#7C3AED", badgeBg: "#F3E8FF", badgeColor: "#7C3AED" },
+  { date: "01 Apr 2026", badge: "Admission", title: "Admissions Open for 2026–27", text: "Admissions are now open for Nursery to Class VIII for the academic session 2026–27. Visit the office to collect the form.", color: "#16A34A", badgeBg: "#F0FDF4", badgeColor: "#16A34A" }
 ];
 
 export const dresscodeData = [
@@ -121,14 +122,14 @@ export const galleryItems = [
 
 export const disclosureData = [
   { label: "School Name", value: "Modern Global School" },
-  { label: "Curriculum Board", value: "Central Board of Secondary Education (CBSE)" },
+  { label: "Curriculum Board", value: "CBSE Curriculum (Based on Central Board of Secondary Education)" },
   { label: "CBSE Code", value: "XXXXXXXXXX" },
   { label: "School Code", value: "XXXXXX" },
-  { label: "Address", value: "Dalmiyanagar, Rohtas, Bihar 821305" },
+  { label: "Address", value: "Dalmianagar, Rohtas, Bihar 821305" },
   { label: "Principal Name", value: "Mrs. Kumkum Agarwal" },
   { label: "Contact Number", value: "+91-09798560695" },
   { label: "Email", value: "info@modernglobalschool.in" },
-  { label: "Classes Offered", value: "Playgroup to Class VIII" },
+  { label: "Classes Offered", value: "Nursery to Class VIII" },
   { label: "School Type", value: "Co-Educational, English Medium" },
   { label: "Land Area", value: "[Area in sq. meters]" },
   { label: "Building Type", value: "Pucca (Own Building)" },
@@ -157,7 +158,7 @@ export const docs = [
 ];
 
 export const contactInfo = [
-  { icon: "fas fa-map-marker-alt", label: "Address", value: "Modern Global School, Dalmiyanagar, Rohtas, Bihar 821305", color: "#DC2626" },
+  { icon: "fas fa-map-marker-alt", label: "Address", value: "Modern Global School, Dalmianagar, Rohtas, Bihar 821305", color: "#DC2626" },
   { icon: "fas fa-phone", label: "Phone", value: "+91-09798560695", color: "#2563EB", link: "tel:+919798560695" },
   { icon: "fas fa-envelope", label: "Email", value: "info@modernglobalschool.in", color: "#DC2626", link: "mailto:info@modernglobalschool.in" },
   { icon: "fab fa-whatsapp", label: "WhatsApp", value: "+91-09798560695", color: "#25D366", link: "https://wa.me/919798560695" }
@@ -188,8 +189,8 @@ export const footerQuickLinks = [
 ];
 
 export const footerAcademics = [
-  { l: "CBSE Curriculum School in Dalmiyanagar" },
-  { l: "Playgroup to Class VIII" },
+  { l: "CBSE Curriculum School in Dalmianagar" },
+  { l: "Nursery to Class VIII" },
   { l: "Best school in dehri dalmiyanagar" },
   { l: "Best school world calss infrastructure" }
 ];
@@ -201,7 +202,7 @@ export const footerCareers = [
 ];
 
 export const footerContact = [
-  { icon: "fas fa-map-marker-alt", text: "Dalmiyanagar, Rohtas, Bihar 821305" },
+  { icon: "fas fa-map-marker-alt", text: "Dalmianagar, Rohtas, Bihar 821305" },
   { icon: "fas fa-phone", text: "+91-09798560695" },
   { icon: "fas fa-envelope", text: "info@modernglobalschool.in" },
   { icon: "fas fa-clock", text: "Mon–Sat: 7:30 AM – 4:00 PM" }
@@ -209,12 +210,12 @@ export const footerContact = [
 
 // SEO Keywords for Footer
 export const footerSEOKeywords = [
-  "Best School in Dalmiyanagar",
+  "Best School in Dalmianagar",
   "Top CBSE School Rohtas",
   "Quality Education Dehri on Sone",
   "Best School in Dehri",
   "Top School in Rohtas District",
-  "CBSE Affiliated School Dalmiyanagar",
+  "CBSE Affiliated School Dalmianagar",
   "Best Primary School Rohtas",
   "Top Education Dehri on Sone"
 ];
@@ -222,28 +223,22 @@ export const footerSEOKeywords = [
 // Board Members Data
 export const boardMembers = [
   {
-    name: "Mr. Rajesh Kumar",
-    designation: "Chairman",
+    name: "Shri AR Verma",
+    designation: "Senior Advisory Member",
     image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
     quote: "Excellence in education is our commitment to every child's bright future."
   },
   {
-    name: "Mrs. Priya Sharma", 
-    designation: "Vice Chairman",
+    name: "Shri Satendra Kushwaha",
+    designation: "Board Member",
     image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
     quote: "We believe in nurturing minds with values and academic excellence."
   },
   {
-    name: "Dr. Amit Singh",
-    designation: "Secretary",
-    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg", 
-    quote: "Quality education shapes the leaders of tomorrow."
-  },
-  {
-    name: "Mr. Sunil Agarwal",
-    designation: "Treasurer",
+    name: "Shri Mithlesh Singha",
+    designation: "Senior Advocate",
     image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
-    quote: "Investing in education is investing in our nation's future."
+    quote: "Quality education shapes the leaders of tomorrow."
   }
 ];
 
@@ -280,6 +275,16 @@ export const teachingCommunityData = {
   groupImage: "/latestimage/director_sir_addressing_ptm_crowd_modern_global_school_dalmiyanagar_dehri.jpeg", // Using PTM image as placeholder for staff community
   message: "Our dedicated team of 20+ experienced educators brings passion, expertise, and care to every classroom. Together, we create an environment where learning thrives, creativity flourishes, and every child discovers their unique potential. With diverse backgrounds and specialized training, our teaching community is committed to nurturing tomorrow's leaders with knowledge, values, and confidence."
 };
+
+// Administrative Staff Data
+export const administrativeStaff = [
+  {
+    name: "Tripti Singh",
+    designation: "Office Superintendent",
+    department: "Administration",
+    description: "Manages daily administrative operations and student affairs"
+  }
+];
 
 export const socials = [
   { i: "fab fa-facebook-f", l: "https://facebook.com" },

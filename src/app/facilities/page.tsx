@@ -75,13 +75,13 @@ export default function FacilitiesPage() {
                 School Transport
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                We provide safe, GPS-tracked school buses covering all major routes in and around Dalmiyanagar and Rohtas. Our buses are maintained regularly and are driven by trained, verified drivers with attendants on board.
+                We provide safe, GPS-tracked school buses covering all major routes in and around Dalmianagar and Rohtas. Our buses are maintained regularly and are driven by trained, verified drivers with attendants on board.
               </p>
               {[
                 "GPS tracking on all vehicles",
                 "Trained & verified drivers",
                 "Attendants on every bus",
-                "Routes covering Dalmiyanagar & Rohtas",
+                "Routes covering Dalmianagar & Rohtas",
                 "Regular maintenance checks"
               ].map((f) => (
                 <div key={f} className="flex items-center gap-2 text-sm text-gray-600 mb-2">

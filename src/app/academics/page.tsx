@@ -21,7 +21,7 @@ const classrooms = [
 ];
 
 const levels = [
-  { level: "Playgroup & Nursery", color: "#F97316", desc: "Play-based early learning that nurtures curiosity, motor skills and social development." },
+  { level: "Nursery", color: "#F97316", desc: "Play-based early learning that nurtures curiosity, motor skills and social development." },
   { level: "LKG & UKG", color: "#F59E0B", desc: "Structured pre-primary program introducing letters, numbers, colours and creative activities." },
   { level: "Primary (I–V)", color: "#1D4ED8", desc: "Foundation of literacy, numeracy, science and values through activity-based learning." },
   { level: "Middle School (VI–VIII)", color: "#16A34A", desc: "Deepening subject knowledge with projects, labs and co-curricular integration." }
@@ -44,7 +44,7 @@ export default function AcademicsPage() {
             Our Academics
           </h1>
           <p className="text-blue-200 text-base max-w-xl mx-auto">
-            A comprehensive CBSE curriculum from Playgroup to Class VIII, designed to nurture critical thinking, creativity, and a lifelong love for learning.
+            A comprehensive CBSE curriculum from Nursery to Class VIII, designed to nurture critical thinking, creativity, and a lifelong love for learning.
           </p>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function AcademicsPage() {
             <div>
               <span className="text-[#F97316] font-bold text-sm uppercase tracking-widest">Curriculum</span>
               <h2 className="text-3xl font-black text-[#1E3A8A] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                CBSE Curriculum — Playgroup to Class VIII
+                CBSE Curriculum — Nursery to Class VIII
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 We follow the CBSE (Central Board of Secondary Education) curriculum — recognized nationally and internationally for its robust academic standards. Our teaching methodology goes beyond textbooks — we focus on conceptual understanding, practical skills, and real-world application.
@@ -102,7 +102,7 @@ export default function AcademicsPage() {
                 img: "/latestimage/teacher_teaching_in_the_classroom_to_kids_modern_global_school_dalmiyanagar_dehri.jpeg", 
                 label: "Kids Classroom", 
                 desc: "Early learning with engaging activities for our youngest students",
-                level: "Playgroup - UKG",
+                level: "Nursery - UKG",
                 color: "#F97316"
               },
               { 

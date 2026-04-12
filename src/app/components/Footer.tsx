@@ -4,7 +4,7 @@ import { footerQuickLinks, footerAcademics, footerContact, socials, footerSEOKey
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F1F4A] text-white">
+    <footer className="bg-gradient-to-br from-[#7C3AED] to-[#1E1B4B] text-white">
       <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
@@ -14,16 +14,16 @@ export default function Footer() {
             </div>
             <div>
               <div className="font-bold text-white text-sm leading-tight">Modern Global School</div>
-              <div className="text-[11px] text-blue-300">CBSE Affiliated</div>
+              <div className="text-[11px] text-cyan-300">CBSE Affiliated</div>
             </div>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed mb-5">
-            Leading CBSE school in Dalmiyanagar providing quality education and holistic development since 2005. Serving as best school in Dalmiyanagar, serving Dehri on Sone and surrounding areas with excellence in academics, sports, and co-curricular activities.
+            Leading school following CBSE curriculum in Dalmianagar providing quality education and holistic development since 2005. Serving as best school in Dalmianagar, serving Dehri on Sone and surrounding areas with excellence in academics, sports, and co-curricular activities.
           </p>
           <div className="flex gap-3">
             {socials.map(({ i, l }) => (
               <a key={i} href={l} target="_blank" rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#F97316] flex items-center justify-center transition-colors text-sm">
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF6B35] flex items-center justify-center transition-colors text-sm">
                 <i className={i} />
               </a>
             ))}
@@ -36,8 +36,8 @@ export default function Footer() {
           <ul className="space-y-2">
             {footerQuickLinks.map(({ l, h }) => (
               <li key={l}>
-                <Link href={h} className="text-gray-400 hover:text-[#F97316] text-sm transition-colors flex items-center gap-1.5">
-                  <i className="fas fa-chevron-right text-[10px] text-[#F97316]" />{l}
+                <Link href={h} className="text-gray-400 hover:text-[#FF6B35] text-sm transition-colors flex items-center gap-1.5">
+                  <i className="fas fa-chevron-right text-[10px] text-[#FF6B35]" />{l}
                 </Link>
               </li>
             ))}
@@ -50,13 +50,13 @@ export default function Footer() {
           <ul className="space-y-2">
             {footerAcademics.map(({ l }) => (
               <li key={l} className="text-gray-400 text-sm flex items-center gap-1.5">
-                <i className="fas fa-chevron-right text-[10px] text-[#F97316]" />{l}
+                <i className="fas fa-chevron-right text-[10px] text-[#FF6B35]" />{l}
               </li>
             ))}
           </ul>
-          <div className="mt-5 p-3 bg-[#F97316]/10 rounded-xl border border-[#F97316]/20">
-            <p className="text-xs text-[#FED7AA] font-semibold mb-1">Admissions Open 2026–27</p>
-            <p className="text-xs text-gray-400">Playgroup to Class VIII • CBSE Curriculum • Best School in Dalmiyanagar</p>
+          <div className="mt-5 p-3 bg-[#FF6B35]/10 rounded-xl border border-[#FF6B35]/20">
+            <p className="text-xs text-[#FDBA74] font-semibold mb-1">Admissions Open 2026–27</p>
+            <p className="text-xs text-gray-400">Nursery to Class VIII • CBSE Curriculum • Best School in Dalmianagar</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
           <ul className="space-y-3">
             {footerContact.map(({ icon, text }) => (
               <li key={text} className="flex items-start gap-3 text-sm text-gray-400">
-                <i className={`${icon} text-[#F97316] mt-0.5 w-4 shrink-0`} />
+                <i className={`${icon} text-[#FF6B35] mt-0.5 w-4 shrink-0`} />
                 <span>{text}</span>
               </li>
             ))}
@@ -79,11 +79,11 @@ export default function Footer() {
       </div>
 
       {/* SEO Keywords Section */}
-      <div className="border-t border-white/10 bg-[#0A1635]">
+      <div className="border-t border-white/10 bg-gradient-to-r from-[#6D28D9] to-[#312E81]">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex flex-wrap gap-2 justify-center text-xs text-gray-500">
             {footerSEOKeywords.map((keyword, index) => (
-              <span key={index} className="hover:text-[#F97316] transition-colors">
+              <span key={index} className="hover:text-[#FF6B35] transition-colors">
                 {keyword}
                 {index < footerSEOKeywords.length - 1 && <span className="mx-1 text-gray-600">•</span>}
               </span>
@@ -95,7 +95,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500">
-          <p>© 2025 Modern Global School, Dalmiyanagar - Best CBSE School in Rohtas. All rights reserved.</p>
+          <p>© 2025 Modern Global School, Dalmianagar - Best CBSE School in Rohtas. All rights reserved.</p>
           <p>CBSE Affiliated | Top School in Dehri on Sone | Rohtas, Bihar 821305</p>
         </div>
       </div>

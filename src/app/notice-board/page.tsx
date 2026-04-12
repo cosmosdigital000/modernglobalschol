@@ -12,7 +12,7 @@ const extendedNotices = [
   { date: "10 Feb 2026", badge: "Exam", title: "Unit Test Schedule — March 2026", text: "Unit tests for all classes will be held in the first week of March 2026. Detailed schedule will be shared with class teachers.", color: "#DC2626", badgeBg: "#FEF2F2", badgeColor: "#DC2626" },
   { date: "05 Feb 2026", badge: "Holiday", title: "Saraswati Puja Holiday", text: "School will remain closed on Saraswati Puja (Vasant Panchami). Date as per the Hindu calendar. Blessings for all students.", color: "#F59E0B", badgeBg: "#FFFBEB", badgeColor: "#B45309" },
   { date: "01 Feb 2026", badge: "Result", title: "First Term Result Declaration", text: "First term results will be declared on 5th February 2026. Parents are requested to collect the report card from school.", color: "#DC2626", badgeBg: "#FEF2F2", badgeColor: "#DC2626" },
-  { date: "25 Jan 2026", badge: "Admission", title: "Registration for Session 2026–27 Begins", text: "Registration for the new academic session 2026–27 is now open for Playgroup to Class VIII. Limited seats available. Visit the school office for details.", color: "#16A34A", badgeBg: "#F0FDF4", badgeColor: "#16A34A" }
+  { date: "25 Jan 2026", badge: "Admission", title: "Registration for Session 2026–27 Begins", text: "Registration for the new academic session 2026–27 is now open for Nursery to Class VIII. Limited seats available. Visit the school office for details.", color: "#16A34A", badgeBg: "#F0FDF4", badgeColor: "#16A34A" }
 ];
 
 export default function NoticeBoardPage() {
