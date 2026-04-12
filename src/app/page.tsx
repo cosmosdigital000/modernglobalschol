@@ -31,11 +31,11 @@ export default function Home() {
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section id="home" className="relative min-h-[92vh] flex items-center overflow-hidden">
+      <section id="home" className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden">
         <Image src="/latestimage/school_beautiful_front_modern_global_school_dalmiyanagar_dehri.jpeg"
           alt="Modern Global School" fill className="object-cover object-center" priority />
         <div className="hero-overlay absolute inset-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-12 md:py-20 w-full">
           <div className="max-w-2xl" data-aos="fade-right">
             <span className="inline-block bg-[#FF6B35] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
               CBSE Curriculum • Est. 2005

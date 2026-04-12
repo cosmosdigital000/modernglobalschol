@@ -62,9 +62,9 @@ export default function Navbar() {
               <div className="w-11 h-11 rounded-full overflow-hidden ring-2 ring-[#8B5CF6]/20">
                 <Image src="/latestimage/logo_modern_global_school_dalmiyanagar_dehri.jpg" alt="Modern Global School" width={44} height={44} className="object-cover w-full h-full" />
               </div>
-              <div className="hidden sm:block leading-tight">
-                <div className="navbar-logo-text text-[#7C3AED] text-base lg:text-lg leading-none">Modern Global School</div>
-                <div className="navbar-address-text text-xs lg:text-sm text-gray-500">Dalmianagar, Rohtas, Bihar</div>
+              <div className="leading-tight">
+                <div className="navbar-logo-text text-[#7C3AED] text-base sm:text-lg lg:text-xl leading-none">Modern Global School</div>
+                <div className="navbar-address-text text-xs sm:text-xs lg:text-sm text-gray-500">Dalmianagar, Rohtas, Bihar</div>
               </div>
             </Link>
 
