@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed mb-5">
-            Leading school following CBSE curriculum in Dalmianagar providing quality education and holistic development since 2005. Serving as best school in Dalmianagar, serving Dehri on Sone and surrounding areas with excellence in academics, sports, and co-curricular activities.
+            Leading school following CBSE curriculum in Dalmianagar providing quality education and holistic development since 2019. Serving as best school in Dalmianagar, serving Dehri on Sone and surrounding areas with excellence in academics, sports, and co-curricular activities.
           </p>
           <div className="flex gap-3">
             {socials.map(({ i, l }) => (

@@ -38,7 +38,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-12 md:py-20 w-full">
           <div className="max-w-2xl" data-aos="fade-right">
             <span className="inline-block bg-[#FF6B35] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 tracking-widest uppercase">
-              CBSE Curriculum • Est. 2005
+              CBSE Curriculum • Est. 2019
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-playfair-display), serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
               Modern Global<br /><span className="text-[#FBBF24]">School</span>
@@ -91,7 +91,7 @@ export default function Home() {
             <div data-aos="fade-right">
               <span className="text-[#FF6B35] font-bold text-sm uppercase tracking-widest">About Us</span>
               <h2 className="text-3xl md:text-4xl font-black text-[#7C3AED] mt-2 mb-5 section-line" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>
-                Building Future Leaders Since 2005
+                Building Future Leaders Since 2019
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
                 Modern Global School, Dalmianagar is one of Rohtas&apos;s most trusted institutions following CBSE curriculum. For over a decade, we have been committed to providing world-class education that combines academic excellence with character development, sports, and co-curricular activities.
@@ -178,7 +178,13 @@ export default function Home() {
             {boardMembers.map(({ name, designation, image, quote }, i) => (
               <div key={name} className="bg-gradient-to-b from-[#FAF5FF] to-white rounded-2xl p-4 shadow-sm border border-purple-100 card-hover text-center" data-aos="fade-up" data-aos-delay={i * 80}>
                 <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 ring-2 ring-[#8B5CF6]/10 shadow-md">
-                  <Image src={image} alt={name} width={80} height={80} className="w-full h-full object-cover object-top" />
+                  {image.startsWith('emoji://') ? (
+                    <div className="w-full h-full bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center text-3xl">
+                      {image.replace('emoji://', '')}
+                    </div>
+                  ) : (
+                    <Image src={image} alt={name} width={80} height={80} className="w-full h-full object-cover object-top" />
+                  )}
                 </div>
                 <div className="font-bold text-[#7C3AED] text-sm" style={{ fontFamily: 'var(--font-playfair-display), serif' }}>{name}</div>
                 <div className="text-[#FF6B35] font-semibold text-xs mb-2">{designation}</div>
@@ -204,7 +210,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-3 mb-7">
                 {[
                   { icon: "fas fa-graduation-cap", title: "CBSE Curriculum", text: "Playgroup to Class VIII — strong foundation & skills", color: "#8B5CF6" },
-                  { icon: "fas fa-flask", title: "Science & Technology", text: "Smart labs & computer science for modern learners", color: "#10B981" },
+                  { icon: "fas fa-flask", title: "Science & Technology", text: "Modern computer lab & digital learning for tech-savvy students", color: "#10B981" },
                   { icon: "fas fa-palette", title: "Co-Curricular Activities", text: "Yoga, horse riding, music, art, sports & cultural events", color: "#FF6B35" }
                 ].map(({ icon, title, text, color }) => (
                   <div key={title} className="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border border-green-50">
@@ -400,7 +406,7 @@ export default function Home() {
                     <div className="text-xs text-gray-600 font-medium">Expert Teachers</div>
                   </div>
                   <div className="text-center p-4 bg-[#ECFDF5] rounded-xl border border-green-200">
-                    <div className="text-2xl font-black text-[#10B981]">15+</div>
+                    <div className="text-2xl font-black text-[#10B981]">7+</div>
                     <div className="text-xs text-gray-600 font-medium">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-[#ECFDF5] rounded-xl border border-green-200">

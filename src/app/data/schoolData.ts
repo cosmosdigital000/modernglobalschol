@@ -4,11 +4,11 @@ export const statsData = [
   { num: "100%", label: "Parents Satisfaction", icon: "fas fa-heart", color: "#EF4444", bg: "#FEF2F2" },
   { num: "60%", label: "Student Improvement in 1 Year", icon: "fas fa-chart-line", color: "#3B82F6", bg: "#EFF6FF" },
   { num: "20+", label: "Expert Teachers", icon: "fas fa-chalkboard-teacher", color: "#10B981", bg: "#F0FDF4" },
-  { num: "10+", label: "Years of Excellence", icon: "fas fa-medal", color: "#F59E0B", bg: "#FFFBEB" }
+  { num: "7+", label: "Years of Excellence", icon: "fas fa-medal", color: "#F59E0B", bg: "#FFFBEB" }
 ];
 
 export const uspData = [
-  { icon: "fas fa-laptop", title: "Smart Digital Classrooms", desc: "Interactive smartboards, projectors and high-speed internet for immersive learning.", color: "#1D4ED8" },
+  { icon: "fas fa-laptop", title: "Modern Learning Infrastructure", desc: "Smart classrooms, computer lab, library, and digital tools for comprehensive education.", color: "#1D4ED8" },
   { icon: "fas fa-brain", title: "Conceptual Learning", desc: "Focus on understanding over rote learning — developing critical thinkers and problem solvers.", color: "#F97316" },
   { icon: "fas fa-running", title: "Sports & Co-curricular", desc: "Playground, indoor sports, yoga, music, art and horse riding for all-round growth.", color: "#16A34A" },
   { icon: "fas fa-shield-alt", title: "Safe & Secure Campus", desc: "CCTV surveillance, trained security staff, and GPS-enabled school buses.", color: "#7C3AED" },
@@ -18,6 +18,8 @@ export const uspData = [
 
 export const facilitiesData = [
   { icon: "fas fa-laptop-code", name: "Smart Classrooms", desc: "Interactive boards & digital learning tools", img: "/latestimage/teacher_teaching_in_the_classroom_to_students_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { icon: "fas fa-book", name: "Library", desc: "Well-stocked library with books and reading area", img: "/latestimage/library.webp" },
+  { icon: "fas fa-desktop", name: "Computer Lab", desc: "Modern computer lab for digital literacy", img: "/latestimage/computerlab.jpg" },
   { icon: "fas fa-seedling", name: "Vibrant Environment", desc: "Beautiful and well-maintained school premises", img: "/latestimage/steps_premises_modern_global_school_dalmiyanagar_dehri.png" },
   { icon: "fas fa-users", name: "Staff Room", desc: "Dedicated space for teachers and staff collaboration", img: "/latestimage/staff_room_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { icon: "fas fa-futbol", name: "Sports Ground", desc: "Cricket, football, athletics & outdoor sports", img: "/latestimage/kids_play_area_modern_global_school_dalmiyanagar_dehri.jpeg" },
@@ -107,6 +109,8 @@ export const galleryItems = [
   { cat: "Infrastructure", label: "School Beautiful Front", img: "/latestimage/school_beautiful_front_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Infrastructure", label: "School Front View", img: "/latestimage/school_beautiful_front2_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Infrastructure", label: "School Entrance", img: "/latestimage/school_entrance_modern_global_school_dalmiyanagar_dehri.jpeg" },
+  { cat: "Infrastructure", label: "School Library", img: "/latestimage/library.webp" },
+  { cat: "Infrastructure", label: "Computer Lab", img: "/latestimage/computerlab.jpg" },
   { cat: "Infrastructure", label: "School Corridor", img: "/latestimage/corridor_premises_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Infrastructure", label: "Reception Counter", img: "/latestimage/reception_counter_modern_global_school_dalmiyanagar_dehri.jpeg" },
   { cat: "Infrastructure", label: "Parking Area", img: "/latestimage/parking_modern_global_school_dalmiyanagar_dehri.jpeg" },
@@ -223,9 +227,9 @@ export const footerSEOKeywords = [
 // Board Members Data
 export const boardMembers = [
   {
-    name: "Shri AR Verma",
+    name: "Shri AR Verma", 
     designation: "Senior Advisory Member",
-    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
+    image: "emoji://👤",
     quote: "Excellence in education is our commitment to every child's bright future."
   },
   {
@@ -237,7 +241,7 @@ export const boardMembers = [
   {
     name: "Shri Mithlesh Singha",
     designation: "Senior Advocate",
-    image: "/latestimage/board_member_modern_global_school_dalmiyanagar_dehri.jpeg",
+    image: "emoji://👤", 
     quote: "Quality education shapes the leaders of tomorrow."
   }
 ];
